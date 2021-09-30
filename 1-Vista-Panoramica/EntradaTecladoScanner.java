@@ -1,4 +1,4 @@
-/*
+/**
  * Programa para mostra la esctructura básica de entrada de datos
  * de consola
  *
