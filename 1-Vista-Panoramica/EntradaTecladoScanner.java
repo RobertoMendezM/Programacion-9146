@@ -1,10 +1,11 @@
 /**
- * Programa para mostra la esctructura básica de entrada de datos
+ * Programa para mostrar la esctructura básica de lectura de datos
  * de consola
  *
- *  Uaando  Scanner
+ *  Usando  Scanner
  *
  * Curso: programacion 2021-2022
+ * Clase: 4/Oct/2021
  * @author Roberto Mèndez Mèndez
  * @version 29/Sep/21
  */
@@ -20,7 +21,4 @@ public class EntradaTecladoScanner {
         String pet = teclado.nextLine();
         System.out.print("Your pet names is " + pet);
     }
-
-
-
 }
