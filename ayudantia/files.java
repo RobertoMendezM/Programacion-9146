@@ -10,7 +10,7 @@ public class files{
 
     public static void main(String[] args) {
         try{
-            File miArchivo = new File("datos.csv");
+            File miArchivo = new File("texto.csv");
             Scanner scanner = new Scanner(miArchivo);
             while(scanner.hasNextLine()){
                 String linea = scanner.nextLine();
