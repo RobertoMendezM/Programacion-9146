@@ -28,6 +28,8 @@ public class Estudiante {
             System.out.println("Son diferentes");
 
         }
+        System.out.println("########");
+        System.out.println(persona1.correo);
 
         
     }

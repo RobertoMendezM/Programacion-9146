@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class Persona {
     private String nombre;
-    public String correo;
+    protected String correo;
     public String telefono;
     public ArrayList<String> materias;
 
@@ -18,7 +18,7 @@ public class Persona {
         this.materias = new ArrayList<String>();
     }
 
-    public Persona(String nombre, String correo, String telefono,String archivo) {
+    protected Persona(String nombre, String correo, String telefono,String archivo) {
         Random rand = new Random();
         this.nombre = nombre + rand.nextInt(100);
         this.correo = correo;
@@ -43,7 +43,7 @@ public class Persona {
 
     // getter de Nombre
     public String getNombre(){
-        return "El alumno se llama " + this.nombre;
+        return "La persona se llama " + this.nombre;
     }
 
     public String getCorreo(){
@@ -62,11 +62,16 @@ public class Persona {
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+    
+    // setter de correo
+    public void setCorreo(String correo) {
+        this.correo = correo;
+    }
 
 
     // Comportamiento a partir de aqui
 
-    public int comprarPaseEstacionamiento(){
+    protected int comprarPaseEstacionamiento(){
         Random rand = new Random();
         int n = rand.nextInt(100);
         return n;
